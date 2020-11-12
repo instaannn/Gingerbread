@@ -16,12 +16,12 @@ final class MainPresenter {
     
     weak var view: IMainViewController?
     var variants: [Variants]?
-   
-    // MARK: Private properties
+    
+    // MARK: - Private properties
     
     private var views: MainData?
-    private var coordinator: IMainCoordinator
-    private var networkService: INetworkService
+    private let coordinator: IMainCoordinator
+    private let networkService: INetworkService
     
     // MARK: - Init
     
@@ -31,7 +31,7 @@ final class MainPresenter {
         self.networkService = networkService
     }
     
-    // MARK: Public methods
+    // MARK: - Public methods
     
     func fetchData() {
         networkService.fetchMainData { [weak self] result in
@@ -41,7 +41,7 @@ final class MainPresenter {
                 switch result {
                 case .failure(_):
                     self.view?.failure()
-                case.success(let data):
+                case.success(let data):                    
                     guard
                         let dataView = data.view,
                         let dataText = data.data?[Constants.indexZero].data?.text,

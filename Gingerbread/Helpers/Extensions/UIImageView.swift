@@ -12,7 +12,7 @@ import UIKit
 
 extension UIImageView {
     
-    // MARK: Public methods
+    // MARK: - Public methods
     
     func load(url: URL) {
         DispatchQueue.global().async { [ weak self ] in

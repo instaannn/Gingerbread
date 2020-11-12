@@ -18,7 +18,7 @@ final class NetworkService: INetworkService {
         downloadJson(url: ApiURL.pryanikyApi, complition: completion)
     }
     
-    // MARK: Private methods
+    // MARK: - Private methods
 
     private func downloadJson<T: Decodable>(url: String, complition: @escaping(Result<T, Error>) -> Void) {
         guard let url = URL(string: url) else { return }
@@ -28,6 +28,7 @@ final class NetworkService: INetworkService {
         session.dataTask(with: url) { (data, _, error) in
             if let error = error {
                 complition(.failure(error))
+                print(error)
                 return
             }
             
@@ -36,6 +37,7 @@ final class NetworkService: INetworkService {
             do {
                 let object = try JSONDecoder().decode(T.self, from: data)
                 complition(.success(object))
+                print(data)
             } catch {
                 complition(.failure(error))
             }

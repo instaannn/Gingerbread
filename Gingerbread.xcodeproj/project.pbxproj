@@ -109,7 +109,6 @@
 		85C15B8525223F4800B1401E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				85C15BAE2523254300B1401E /* Views */,
 				85C15BA52522614800B1401E /* Cell */,
 				85C15B932522422300B1401E /* IMainViewController.swift */,
 				85C15B7425223EDB00B1401E /* MainViewController.swift */,
@@ -200,13 +199,6 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		85C15BAE2523254300B1401E /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		85C15BAF2523264000B1401E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,7 +243,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = "Анна Сычева";
 				TargetAttributes = {
 					85C15B6C25223EDB00B1401E = {
@@ -356,6 +348,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -416,6 +409,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
